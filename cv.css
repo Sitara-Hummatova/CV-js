@@ -31,13 +31,14 @@ body{
     background: #2A78AB;
     width: 45%;
     padding: 50px;
-    gap: 10px;
+    gap: 30px;
     align-items: flex-start;
+   
   }
 
   .profile-image{
     display: flex;
-    width: 500px;
+    
   }
 
   .profile-image img{
@@ -47,11 +48,13 @@ body{
   .left h1 {
     color: #fff;
     font-size: 57px;
+    padding-left: 10px;
   }
 
   .left h4{
     color: #fff;
     font-size: 35px;
+    padding-left: 10px;
   }
 
   .social-links{
@@ -63,6 +66,40 @@ body{
 
   .links{
     display: flex;
+    align-items: center;
+    gap: 8px ;
+  
+  }
+
+  .links a{
+    color: #fff;
+    font-weight: 300;
+  }
+
+  .links img{
+    background: #fff;
+    border-radius: 50%;
+    padding: 1.7px;
+  }
+
+  .relevant-skills{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 15px;
+    padding-left: 10px;
+    
+  }
+
+  .relevant-skills h5{
+    font-size: 29px;
+  }
+
+  .relevant-skills ul>li{
+    font-size: 25px;
+    font-weight: 400;
+    list-style-type: disc;
+    margin-left: 35px;
   }
 
 
@@ -72,8 +109,74 @@ body{
     display: flex;
     flex-direction: column;
     width: 55%;
+    gap:50px;
+    padding: 50px 0 50px 50px ;
   }
-  .links i{
-    fill: green;
+  
+.flight-attendant,
+.bachelor,
+.flight-safety,
+.first-aid{
+  display: flex;
+  align-items: center;
+ 
+ 
+}
+
+.right img{
+ align-self: flex-start;
+}
+  
+
+.right h2{
+  background: #E0EFFA;
+  padding: 25px;
+  font-weight: bolder;
+  
+ 
+}
+
+.text{
+  display: flex;
+  flex-direction: column;
+  font-size: 27px;
+}
+  
+.text li{
+  margin-left: 50px;
+}
+ .text p,
+ .text li{
+  font-weight: 300;
  }
 
+ @media (max-width:768px){
+
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .left{
+    width: 100%;
+  }
+
+  .profile-image img{
+    width: 300px;
+    height: auto;
+  }
+
+  .right{
+    width: 100%;
+    
+  }
+
+  .text{
+    font-size: 20px;
+  }
+ }
+
+ 
+ 
+
+ 
+ 
